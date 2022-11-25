@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="4_project.css">
+    </head>
+    
+    <body>
+        <header class="wes">
+            The Films of Wes Anderson
+        </header>
+
+        <div class="input">
+            <h1> add film</h1>
+            <form class="newMovie" id="myForm" >
+                <input type="text" name="title" placeholder="eg. Bottle Rocket">
+                <input type="number" name="rating" placeholder="eg. 6.9">
+                <input type="number" name="runtime" placeholder="eg. 120">
+                <input type="text" name="cast" placeholder="eg. owen wilson, luke wilson, ned dowd">
+                <input type="text" name="plot" placeholder="eg. Three friends plan to pull off a simple robbery and go on the run.">
+                <input type="number" name="year" placeholder="eg. 1996">
+                <button id="formSubmit" type="submit" >submit</button>
+            </form>
+        </div>
+
+             <div class = "container">
+                <div class="btn">
+                    <button onclick ="sortTable()">sort alphabetically</button>
+                </div>
+             </div>
+
+    <div class="table-responsive">
+
+        <table id="wesStats" class="center">
+                <th >title</th>
+                <th>rating</th>
+                <th>runtime</th>
+                <th>cast</th>
+                <th>plot</th>
+                <th onclick="sortColumn(year)">year</th>
+            
+        <tbody id="myTable">
+        </tbody>
+        </table>
+    </div>
+
+
+    <script src="proj-4.js"></script>
+    </body>
+</html>
