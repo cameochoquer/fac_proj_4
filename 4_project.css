@@ -1,36 +1,48 @@
 html{
-  font-family: freight-sans-pro,sans-serif;;
-
+  font-family: freight-sans-pro,sans-serif;
+  text-transform: uppercase;
 }
 body{
-    text-transform: uppercase;
     background-color: #36a4c5;
 }
-.wes{
+
+header{
    text-align: center;
     font-size: 100px;
     font-weight: 600;
     margin-top: 10%;
     color: #fcea0a;
+    justify-content: center;
+    display: inline-block;
+    margin: auto;
    
 }
 h1{
   text-align: center;
-  color: rgb(1, 72, 1);
+  color: #dd574c
+}
+
+.newMovie{
+  display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: ;
 }
 
 .input {
-  margin: auto;
-  width: 50%;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
   padding: 10px;
-  width: fit-content;
+  width: 100%;
+}
+input{
+  border: none;
+  freight-sans-pro,sans-serif;
 }
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
-   
-}
+
 table, th, td {
     border-collapse: collapse;
     width: fit-content;
@@ -39,59 +51,62 @@ table, th, td {
     color: #57524a;
     color: 0c3131;
     border:none
-
-   
   }
   th, td {
     background-color: #f3cece;
     padding: 20px;
     font-weight: 300;
     border: 1px solid white;
-
   }
   
   .btn {
-    margin: 0;
-    position: absolute;
+    margin: auto;
+    position:absolute;
     top: 50%;
-    left: 50%;
-    -ms-transform: translate(-25%, -25%);
-    transform: translate(-25%, -25%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;  
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color:#63833a;
+    color:white
+    border: none;
   }
-  .container {
-    height: 50px;
-    position: relative;
-    padding: 20px;
+  button{
+    text-transform: uppercase;
+    background-color: #63833a;
+    border: none;
+    color: white;
   }
 
-  .film {
+  .container {
+    height: 50px;
     padding: 20px;
+    position: relative;
     text-align: center;
-  }
+   }
+
+ 
   .table-responsive {
     min-height: .01%;
     overflow-x: auto;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
 }
 
-
-
-@media screen and (max-width: 767px) {
-    .table-responsive {
-        width: 100%;
-        margin-bottom: 15px;
-        overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #ddd;
-    }
-    .table-responsive > .table {
-        margin-bottom: 0;
-    }
-    .table-responsive > .table > thead > tr > th,
-    .table-responsive > .table > tbody > tr > th,
-    .table-responsive > .table > tfoot > tr > th,
-    .table-responsive > .table > thead > tr > td,
-    .table-responsive > .table > tbody > tr > td,
-    .table-responsive > .table > tfoot > tr > td {
-        white-space: nowrap;
-    }
+footer{
+  float:right;
+  font-size: x-small;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+a:visited {
+  color: #fcea0a;
+  background-color: transparent;
+  text-decoration: none;
+  
 }
